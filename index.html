@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <!-- <link rel="stylesheet" href="style.css" /> -->
@@ -16,65 +16,188 @@
 
     <title>Vompu LTD</title>
   </head>
-  <body>
-    <header>
-      <div class="company">
-        <img src="/documents/logo V white.png" alt="Vompu LTD" />
-        <h1>Vompu LTD</h1>
-      </div>
-      <div class="menu">
-        <div class="menuTitle">Home</div>
-        <div class="menuTitle">About Us</div>
-        <div class="menuTitle">Privet Label</div>
-        <div class="menuTitle">Retail Arbitrage</div>
-        <div class="menuTitle">Product</div>
-        <div class="menuTitle">Contact</div>
-      </div>
-    </header>
-    <div class="home">
-      <div class="bigText">
-        <div class="line1">
-          THE MOST <br />
-          LOYAL SELLER
-        </div>
-        <div class="line2"></div>
-        <div class="line3">
-          PRIVET LABEL AND <br />
-          RETAIL ARBITRAGE
-        </div>
-        <p class="details">
-          Vompu LTD is the buying and selling of goods, over an <br />
-          electronic network, primarily the Amazon, Ebay and <br />
-          Walmart.
-        </p>
-        <div class="companyLogos">
-          <img src="/documents/Amazon-Global.png" alt="Amazon" class="logos" />
-          <img src="/documents/ebay.png" alt="ebay" class="logos" />
-          <img src="/documents/walmart.png" alt="walmart" class="logos" />
-        </div>
-      </div>
-    </div>
-    <div class="aboutUs">
-      <div class="containerAbout">
-        <div class="blueLine"></div>
-        <h1>
-          WHO <br />
-          WE ARE
+  <body class="font-Raleway">
+    <header
+      class="h-16 lg:h-28 bg-headerColor flex justify-between lg:justify-center lg:space-x-10 px-10"
+    >
+      <div class="company flex justify-center items-center">
+        <img
+          src="/documents/logo V white.png"
+          alt="Vompu LTD"
+          class="w-12 h-12 lg:w-20 lg:h-20"
+        />
+        <h1
+          class="text-white uppercase text-base lg:text-2xl font-extrabold tracking-widestx2"
+        >
+          Vompu LTD
         </h1>
-        <p class="aboutDetails">
-          We started as a small business in the London/United Kingdom, and our
-          aim is to continue providing our customers with products that keep
-          them happy, at prices that keep them happy. The interests of our
-          customers are always the top priority for us.
-        </p>
-        <br />
-        <p class="aboutDetails">
-          We thoroughly check the quality of our goods, working only with
-          reliable suppliers so that customers only receives the best quality
-          product. We at Vompu LTD believe in high quality and exceptional
-          customer service.
-        </p>
       </div>
-    </div>
+      <div
+        class="menu hidden md:flex md:items-center text-white text-sm lg:text-base font-medium uppercase cursor-pointer"
+      >
+        <div class="menuTitle px-2 lg:px-3 text-gray-400 hover:text-white">
+          Home
+        </div>
+        <div class="menuTitle px-2 lg:px-3 hover:text-gray-400">About Us</div>
+        <div class="menuTitle px-2 lg:px-3 hover:text-gray-400">
+          Privet Label
+        </div>
+        <div class="menuTitle px-2 lg:px-3 hover:text-gray-400">
+          Retail Arbitrage
+        </div>
+        <div class="menuTitle px-2 lg:px-3 hover:text-gray-400">Product</div>
+        <div class="menuTitle px-2 lg:px-3 hover:text-gray-400">Contact</div>
+      </div>
+      <button class="md:hidden">
+        <svg
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          class="w-8 h-8 text-white"
+        >
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </header>
+    <!-- HOME SECTICON -->
+    <section
+      class="home bg-homeColor h-screen flex justify-center items-center px-4 lg:px-0"
+    >
+      <div class="containerHome w-pageFull">
+        <div class="bigText">
+          <div
+            class="line1 text-black text-4xl md:text-6xl lg:text-8xl font-bold"
+          >
+            THE MOST
+          </div>
+          <div
+            class="line1 text-black text-4xl md:text-6xl lg:text-8xl font-bold"
+          >
+            LOYAL SELLER
+          </div>
+          <div class="line2 border-b-2 w-5/6"></div>
+          <div
+            class="line3 text-white text-4xl md:text-6xl lg:text-8xl font-bold"
+          >
+            PRIVET LABEL AND
+          </div>
+          <div
+            class="line3 text-white text-4xl md:text-6xl lg:text-8xl font-bold"
+          >
+            RETAIL ARBITRAGE
+          </div>
+          <p
+            class="details text-white text-base md:text-lg lg:text-xl font-bold my-10 tracking-widestx2 leading-8 w-5/6"
+          >
+            Vompu LTD is the buying and selling of goods, over an electronic
+            network, primarily the Amazon, Ebay and Walmart.
+          </p>
+          <div class="companyLogos flex flex-col lg:flex-row lg:space-x-4">
+            <div>
+              <img
+                src="/documents/Amazon-Global.png"
+                alt="Amazon"
+                class="logos"
+              />
+            </div>
+            <div>
+              <img src="/documents/ebay.png" alt="ebay" class="logos" />
+            </div>
+            <div>
+              <img src="/documents/walmart.png" alt="walmart" class="logos" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT US SECTION -->
+    <section class="flex justify-center items-center">
+      <div class="aboutUs w-pageFull px-4 lg:px-0">
+        <div class="containerAbout my-6 lg:my-20">
+          <div
+            class="blueLine border-b-8 border-b-homeColor w-10 my-1 lg:my-3"
+          ></div>
+          <h1 class="text-5xl md:text-6xl lg:text-8xl font-bold leading-none">
+            WHO
+          </h1>
+          <h1 class="text-5xl md:text-6xl lg:text-8xl font-bold leading-none">
+            WE ARE
+          </h1>
+          <p class="aboutDetails text-gray-800 text-base mt-6">
+            We started as a small business in the London/United Kingdom, and our
+            aim is to continue providing our customers with products that keep
+            them happy, at prices that keep them happy. The interests of our
+            customers are always the top priority for us.
+          </p>
+          <br />
+          <p class="aboutDetails text-gray-800 text-base">
+            We thoroughly check the quality of our goods, working only with
+            reliable suppliers so that customers only receives the best quality
+            product. We at Vompu LTD believe in high quality and exceptional
+            customer service.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- PRIVET LABEL SECTION -->
+    <section class="flex justify-center items-center bg-gray-600">
+      <div class="container w-pageFull my-20">
+        <div class="blueLine border-b-8 border-b-white w-10 my-1 lg:my-3"></div>
+        <h1
+          class="text-5xl md:text-6xl lg:text-8xl font-bold leading-none text-white"
+        >
+          PRIVET LABEL
+        </h1>
+        <p class="aboutDetailsy text-white text-base mt-6">
+          <b>Vompu LTD </b>has its own brand which is <b>Comkite</b>. We always
+          keep an eye on the latest trends in our products and put our
+          customers’ wishes first. That is why we have satisfied customers all
+          over the world, and are thrilled to be a part of the our Privet Label
+          Products.
+        </p>
+        <div class="privetNotes flex justify-between">
+          <div class="">
+            <div
+              class="blueLine border-b-8 border-b-homeColor w-10 my-1 lg:my-3"
+            ></div>
+            <p class="text-base text-white mt-5">
+              PRODUCT <br />
+              QUALITY
+            </p>
+          </div>
+          <div class="">
+            <div
+              class="blueLine border-b-8 border-b-homeColor w-10 my-1 lg:my-3"
+            ></div>
+            <p class="text-base text-white mt-5">
+              ENVIRONMENT <br />
+              FRIENDLY <br />
+              PRODUCTS
+            </p>
+          </div>
+          <div class="">
+            <div
+              class="blueLine border-b-8 border-b-homeColor w-10 my-1 lg:my-3"
+            ></div>
+            <p class="text-base text-white mt-5">
+              QUALITY <br />
+              CERTIFICATES
+            </p>
+          </div>
+          <div class="">
+            <div
+              class="blueLine border-b-8 border-b-homeColor w-10 my-1 lg:my-3"
+            ></div>
+            <p class="text-base text-white mt-5">
+              REAL <br />
+              PICTURES
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
